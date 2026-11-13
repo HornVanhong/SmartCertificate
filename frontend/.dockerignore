@@ -1,0 +1,12 @@
+node_modules
+.next/*
+!.next/standalone
+!.next/standalone/**
+!.next/static
+!.next/static/**
+out
+build
+.git
+.env*.local
+npm-debug.log*
+.DS_Store

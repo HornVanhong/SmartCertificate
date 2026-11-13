@@ -1,0 +1,42 @@
+# Node
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Java
+target/
+.gradle/
+build/
+backend/data/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+!.env.aws.example
+*.pem
+*.key
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfplan
+.terraform/
+terraform.tfvars
+!terraform.tfvars.example
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backups
+backups/
+*.dump
+*.sha256

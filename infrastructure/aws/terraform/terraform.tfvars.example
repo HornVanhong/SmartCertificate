@@ -1,0 +1,22 @@
+aws_region         = "ap-southeast-1"
+environment        = "prod"
+domain_name        = "smartcert.yourdomain.com"
+vpc_cidr           = "10.0.0.0/16"
+availability_zones = ["ap-southeast-1a", "ap-southeast-1b"]
+
+db_instance_class        = "db.t4g.medium"
+db_allocated_storage     = 50
+db_max_allocated_storage = 200
+db_name                  = "smart_certificate"
+db_username              = "smart_cert_admin"
+
+backend_image  = "123456789012.dkr.ecr.ap-southeast-1.amazonaws.com/smart-certificate-backend:latest"
+frontend_image = "123456789012.dkr.ecr.ap-southeast-1.amazonaws.com/smart-certificate-frontend:latest"
+
+backend_cpu    = 1024
+backend_memory = 2048
+
+frontend_cpu    = 512
+frontend_memory = 1024
+
+alert_email = "devops-alerts@yourdomain.com"

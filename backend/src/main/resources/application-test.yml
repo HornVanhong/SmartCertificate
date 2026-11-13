@@ -1,0 +1,15 @@
+spring:
+  flyway:
+    enabled: false
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration
+
+app:
+  auth:
+    jwt-secret: test-only-jwt-secret-key-must-be-at-least-32-bytes-long
+    cookie-secure: false
+  storage:
+    signed-url-secret: test-only-storage-hmac-secret-key-min-32-bytes

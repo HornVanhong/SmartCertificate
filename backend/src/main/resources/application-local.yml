@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/smart_certificate}
+    username: ${DB_USERNAME:smart_cert_user}
+    password: ${DB_PASSWORD:smart_cert_local_pass}
+    driver-class-name: org.postgresql.Driver
+
+app:
+  auth:
+    jwt-secret: ${JWT_SECRET:local-dev-only-jwt-secret-key-must-be-at-least-32-bytes-long}
+    cookie-secure: false
+  storage:
+    signed-url-secret: ${STORAGE_SIGNED_URL_SECRET:local-dev-only-storage-hmac-secret-key-min-32-bytes}
