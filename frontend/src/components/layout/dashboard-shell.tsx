@@ -328,15 +328,6 @@ export function DashboardShell({ children }: DashboardShellProps) {
               <ShieldCheck className="h-3.5 w-3.5 text-[#2563EB]" />
               Verify Page
             </Link>
-            <a
-              href="/swagger-ui.html"
-              target="_blank"
-              rel="noreferrer"
-              className="hidden items-center gap-1.5 rounded-lg border border-border-subtle px-3 py-1.5 text-xs font-medium text-text-secondary transition-colors hover:bg-slate-50 hover:text-text-main md:inline-flex"
-            >
-              API Docs
-              <ExternalLink className="h-3.5 w-3.5" />
-            </a>
             {status === "authenticated" ? (
               <Button variant="outline" size="sm" onClick={() => void handleLogout()}>
                 <LogOut className="h-3.5 w-3.5" />

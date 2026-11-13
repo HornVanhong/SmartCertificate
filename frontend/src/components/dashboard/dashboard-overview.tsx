@@ -18,7 +18,6 @@ import {
   X,
 } from "lucide-react";
 import { useAuth } from "@/components/auth/auth-provider";
-import { SystemStatusCard } from "@/components/dashboard/system-status-card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -235,7 +234,6 @@ export function DashboardOverview() {
           title="Loading workspace"
           description="Restoring your organization session and security context..."
         />
-        <SystemStatusCard />
       </div>
     );
   }
@@ -285,7 +283,6 @@ export function DashboardOverview() {
             </div>
           </CardHeader>
         </Card>
-        <SystemStatusCard />
       </div>
     );
   }
@@ -654,7 +651,6 @@ export function DashboardOverview() {
         </Card>
 
         <div className="space-y-4">
-          <SystemStatusCard />
           <Card className="border-border-subtle/80 shadow-xs">
             <CardContent className="flex items-center justify-between gap-3 p-4">
               <div className="flex items-center gap-2.5">
